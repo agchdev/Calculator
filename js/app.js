@@ -31,7 +31,7 @@ function error(){
     `;
     $body.appendChild(alert);
     
-    // Falta codigo
+    // Falta codigo aqui
 }
 
 function cerrar(alert){
