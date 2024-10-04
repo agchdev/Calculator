@@ -30,6 +30,8 @@ function error(){
         <p id="ok">OK</p>
     `;
     $body.appendChild(alert);
+    
+    // Falta codigo
 }
 
 function cerrar(alert){
