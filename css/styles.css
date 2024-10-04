@@ -110,3 +110,8 @@ body{
     cursor: pointer;
     background-color:  #88888898;
 }
+@media (max-width: 1100px) {
+    .ban{
+        width: 50%;
+    }
+  }
