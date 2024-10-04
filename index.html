@@ -12,11 +12,10 @@
 </head>
 
 <body id="body">
-    
     <div id="appBg">
         <form action="" name="calculator">
-            <input id="historial" type="textfield" name="" value="2222222" autocomplete="off" readonly>
-            <input id="resultado" type="textfield" name="ans" value="22222" autocomplete="off" readonly>
+            <input id="historial" type="textfield" name="" value="" autocomplete="off" readonly>
+            <input id="resultado" type="textfield" name="ans" value="" autocomplete="off" readonly>
             
             <input type="button" value="7" onclick="document.calculator.ans.value+='7'" class="gris">
             <input type="button" value="8" onclick="document.calculator.ans.value+='8'" class="gris">
@@ -37,7 +36,6 @@
             <input type="reset" value="C">
             <input id="opera" type="button" value="=" onclick="document.calculator.ans.value = eval(document.calculator.ans.value)">
             <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="orange">
-
         </form>
     </div>
     <script src="js/app.js"></script>

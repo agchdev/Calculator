@@ -6,27 +6,33 @@ const $$ = selector => document.querySelectorAll(selector);
 const $historial = $('#historial');
 const $resultado = $('#resultado');
 const $opera = $('#opera');
-const $ok = $('#ok');
-const $body = $body('#body');
+
+const $body = $('#body');
 
 $opera.addEventListener('click', comprobar);
-$ok.addEventListener('click', cerrar);
 
 function comprobar(){
 
-    console.log($resultado.value);
+    
     if($resultado.value == 69){
         $resultado.classList.add("blur");
+        error();
+        console.log($resultado.value);
     }
 
-    let alert = document.createElement('div');
-    alert.innerHTML = `<div class="ban">
-                            <p class="red">Has sido permanentemente baneado de la aplicación de calculadora</p>
-                            <p id="ok">OK</p>
-                        </div>`;
-    $body.add
 }
-function cerrar(){
+
+function error(){
+    let alert = document.createElement('div');
+    alert.classList.add('ban');
+    alert.innerHTML = `
+        <p class="red">Has sido permanentemente baneado de la aplicación de calculadora</p>
+        <p id="ok">OK</p>
+    `;
+    $body.appendChild(alert);
+}
+
+function cerrar(alert){
     $body.removeChild(alert);
 }
 function resultadoCensura(){
